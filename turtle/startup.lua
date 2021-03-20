@@ -595,7 +595,7 @@ end
 
 function websocketLoop()
 	
-	local ws, err = http.websocket("ws://ottomated.net:43509")
+	local ws, err = http.websocket("ws://f30dbb6fa149.ngrok.io")
  
 	if err then
 		print(err)
@@ -603,8 +603,8 @@ function websocketLoop()
 		while true do
 			term.clear()
 			term.setCursorPos(1,1)
-			print("      {O}\n")
-			print("Pog Turtle OS. Do not read my code unless you are 5Head.")
+			print("(╯°□°）╯︵ ┻━┻\n")
+			print("Chris.exe is running. Please do not disturb.")
 			local message = ws.receive()
 			if message == nil then
 				break
